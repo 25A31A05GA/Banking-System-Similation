@@ -1,0 +1,53 @@
+Don’t overcomplicate this—it’s just structured steps. Here’s a clean algorithm you can actually implement:
+
+**Banking System Simulation Algorithm**
+
+1. Start
+
+2. Initialize data storage (accounts list/database)
+
+3. Display menu: Create, Deposit, Withdraw, Transfer, Check Balance, Exit
+
+4. Take user choice
+
+5. If Create:
+
+   * Input name, ID
+   * Generate account number
+   * Set balance = 0
+   * Store account
+
+6. If Deposit:
+
+   * Input account number, amount
+   * Validate account
+   * balance += amount
+
+7. If Withdraw:
+
+   * Input account number, amount
+   * Validate account & sufficient balance
+   * balance -= amount
+
+8. If Transfer:
+
+   * Input sender & receiver accounts, amount
+   * Validate both accounts
+   * Check sender balance
+   * Deduct from sender, add to receiver
+
+9. If Check Balance:
+
+   * Input account number
+   * Display balance
+
+10. If Exit: Stop
+
+11. Else: Show error and repeat
+
+**Two practical examples:**
+
+* ATM simulation → withdraw + balance check
+* Online banking → transfer + transaction history
+
+If you want, I can turn this into proper C code (not messy, actually usable).
